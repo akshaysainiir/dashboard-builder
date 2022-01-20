@@ -1,0 +1,70 @@
+@import '~antd/dist/antd.css';
+@import 'prismjs/themes/prism.css';
+@import '~webui-react-components/dist/styles/index.css';
+
+:root {
+  --dashboard-background: #f3f3f3;
+  --window-background: #ffffff;
+}
+
+body {
+  margin: 0px;
+  overflow: hidden;
+}
+
+#root {
+  height: 100vh;
+  width: 100%;
+}
+
+.settings-popup-btn {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  margin: 2px;
+  z-index: 2;
+}
+
+.window-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: var(--window-background);
+
+  border-left: 1em var(--dashboard-background) solid;
+  border-top: 0.5em var(--dashboard-background) solid;
+  border-bottom: 0.5em var(--dashboard-background) solid;
+}
+
+.settings-popup-grid {
+  height: 800px;
+  width: 500px;
+  overflow: auto;
+
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: auto;
+}
+
+.settings-popup-option {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 5px;
+}
+
+.settings-popup-title {
+  font-weight: bold;
+  padding: 5px;
+  border-bottom: 1px solid #A0A0A0;
+  margin-bottom: 5px;
+}
+
+.settings-popup-grid article {
+  border: 1px solid #F0F0F0;
+  padding: 5px;
+  overflow: auto;
+}
+
+[contenteditable]:focus {
+  outline: 1px solid #1890ff;
+}
